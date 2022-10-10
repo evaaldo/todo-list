@@ -4,31 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To do</title>
-
-    <link rel="stylesheet" href="style.css">
-    <link href='https://css.gg/add.css' rel='stylesheet'>   
-    <link href='https://css.gg/remove.css' rel='stylesheet'>
-    <script src="main.js" defer></script>
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <link rel="icon" type="jpeg" href="livros.png">
 </head>
 <body>
-    <div class="to-do">
-        <div class="header">
-            <h1 class="titulo-principal">To-Do List</h1>
-        </div>
-
-        <div class="linha">
-
-        </div>
-
-        <div class="insert">
-            <input class="text-insert" type="text" placeholder="O que você tem que fazer?">
-            <button type="submit"><i class="gg-add"></i> </button>
-        </div>
-        
-        <div id="todoList">
-            <ul></ul>
+    <div class="background">
+        <div class="conteudo">
+            <div class="titulo">
+                <h1>ToDo List</h1>
+            </div>
+            <div class="linha"></div>
+            <div class="principal">
+                <form class="formulario" id="novoItem">
+                    <label for="atividade">Atividade</label>
+                    <input type="text" name="atividade" id="atividade" placeholder="Estudar">
+                    <div class="botoes">
+                        <input type="submit" value="+" class="cadastrar adicionar" id="cadastrar">
+                    </div>
+                </form>
+                <div class="redes">
+                    <a href="https://github.com/evaaldo"><img src="github.png" alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/in/evaldo-rodrigues-0b0522247/"><img src="linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
         </div>
     </div>
+    
+        <ul class="lista" id="lista">
+        </ul>
 </body>
 </html>

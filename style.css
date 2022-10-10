@@ -4,91 +4,152 @@
     font-family: helvetica;
 }
 
-ul {
-    display: flex;
-    flex-direction: column-reverse;
-    margin-bottom: 20px;
-}
-
 body {
-    background-color: beige;
-}
-
-.header {
-    margin: 20px;
+    background-color: rgb(236, 95, 95);
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 15px;
+    align-items: center;
+    transition: all .3s;
 }
 
-.remove-button {
-    padding: 5px;
-    border-radius: 15px;
-    font-size: 12px;
-    font-weight: bold;
-    background-color: bisque;
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 35px;
+    width: 800px;
+    height: 400px;
+    border-radius: 25px;
+    margin-top: 100px;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
 }
 
 .linha {
-    margin: 15px auto 15px auto;
+    margin: 0 auto 0 auto;
     width: 70%;
-    height: 0;
-    border: 1px solid rgb(100, 100, 100);
-    opacity: 0.4;
+    height: 1px;
+    border-top: 1px solid black;
 }
 
-.insert {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.insert input {
-    width: 600px;
-    height: 30px;
+.principal {
+    border: 1px solid black;
     border-radius: 15px;
-    text-align: center;
-    font-size: 15px;
+    margin-top: 40px;
+    width: 30%;
+    height: 150px;
+    background-color: rgb(236, 95, 95);
+    box-shadow: 2px 2px 10px black;
 }
 
-.insert button {
-    background: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    color: rgb(199, 157, 80);
-}
-
-.divLi {
-    margin-top: 20px;
-    padding: 10px;
-    background: lightgray;
-    border-radius: 10px;
+.formulario {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.divLi span {
-    width: 80%;
-    color: dimgray;
+.formulario label {
+    padding-top: 25px;
+    font-weight: bold;
+    font-size: 20px;
 }
 
-.divLi input {
-    width: 10%;
-    outline: none;
-    accent-color: currentcolor;
+.formulario #atividade {
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: center;
 }
 
-.divLi i {
-    font-size: 22px;
-    color: brown;
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
-li {
-    list-style-type: none;
+.redes img {
+    margin-top: 35px;
+    width: 32px;
+    transition: all .4s;
 }
 
-.todo__item {
+.redes img:hover {
+    opacity: 0.5;
+}
 
+.cadastrar {
+    font-size: 20px;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    transition: 0.4s;
+    cursor: pointer;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.remover {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    margin-top: 10px;
+    transition: all .5s;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.adicionar:hover {
+    background: aquamarine;
+}
+
+.remover:hover {
+    background-color: rgb(236, 88, 43);
+}
+
+.lista {
+    transition: 0.5s;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px;
+}
+
+.item {
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    list-style: none;
+    border-radius: 20px;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.2s;
+}
+
+.item:hover {
+    transform: scale(1.05);
 }
